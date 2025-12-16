@@ -1,0 +1,93 @@
+/* Fuentes, colores y estilos globales */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", sans-serif;
+    background: linear-gradient(135deg, #0a0f24, #1b2847, #14213d);
+    background-size: 400% 400%;
+    animation: fondo 12s ease infinite;
+    color: #ffffff;
+}
+
+/* Animación del fondo */
+@keyframes fondo {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 40px 20px;
+}
+header h1 {
+    font-size: 3rem;
+    letter-spacing: 3px;
+    color: #00eaff;
+    text-shadow: 0 0 10px #00eaff;
+}
+.sub {
+    color: #d8d8d8;
+    margin-top: -10px;
+    font-size: 1.1rem;
+}
+
+/* Contenedor principal */
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Estilo de tarjetas (glassmorphism) */
+.card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 25px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    margin-bottom: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Animación al pasar el cursor */
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+}
+
+/* Títulos */
+h2 {
+    color: #00eaff;
+    text-shadow: 0 0 10px #00eaff;
+    margin-bottom: 10px;
+}
+
+/* Listas */
+ul li {
+    margin: 8px 0;
+    line-height: 1.6;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #cfcfcf;
+    margin-top: 30px;
+    font-size: 0.9rem;}
+
+.btn-descargar{
+display: inline-block;
+padding: 12px 20px;
+background-color: #007bff;
+color:whiter;
+font-weignt:bold;
+border-radius: 8px;
+text-decoration: none;
+transition: 0.3;
+
+
+}
